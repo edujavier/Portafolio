@@ -1,0 +1,460 @@
+
+
+  /*importo la font de la letra que voy a usar desde font google*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(25, 25, 41);
+  color: #fff;
+}
+
+
+.navbar{
+  display: flex;/*elementos uno a lado de otro*/
+  justify-content:flex-end;/*coloca en lado derecho la lista de barra */
+  padding: 2em;
+}
+
+/*.home{
+  padding-right: 3em;
+}
+.servicioss{
+  padding-right: 3em;
+}
+.acerca{
+  padding-right: 3em;
+}
+.mihabilidades{
+  padding-right: 3em;
+}
+.miportafolio{
+  padding-right: 3em; 
+}
+.contactoo{
+  padding-right: 3em;
+}*/
+
+.brand span{
+  color: aqua;
+}
+
+.menu{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;/*espacio en la navegacion home servicios....*/
+ 
+}
+.menu li{
+  list-style: none;/*retira las bolitas de listas*/
+  
+}
+.menu a{
+  color: #fff;
+  text-decoration: none;/*quita las lineas de enlaces enn la nav*/
+}
+.menu .active{
+  color: #34b0be;
+}
+
+  .main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);/*crea grd en columnas*/
+    
+    /*lign-items: center;*/
+    
+    
+  }
+
+
+.jorge span{
+  color: #34b0be;
+  font-size: 4em;
+}
+
+.marketing{
+  padding-bottom: 1em;
+  padding-top: 1em;
+  color: #fff;
+}
+.años{
+  padding-bottom: 1em;
+}
+
+.años span{
+  color: #34b0be;
+}
+
+
+
+h1{
+    color: #fff;
+    font-size: 3em;
+  
+}
+
+
+
+
+.social-networks{
+  
+  display: block;
+}
+.social-networks .linkedin{
+  
+  padding: 8px;
+  border-radius: 100%;
+  background-color: #d1ceca;
+}
+.social-networks .instagram{
+  /*width: 20px;
+  height: 20px;*/
+  
+  padding: 8px;
+  border-radius: 100%;
+  background-color: #d1ceca;
+}
+
+.social-networks .twitter{
+  padding: 8px;
+  border-radius: 100%;
+  background-color: #d1ceca;
+}
+.linkedin{
+  margin-right: 1em;
+}
+.instagram{
+  margin-right: 1em;
+}
+
+
+.container-networks{
+  /*width: 500px;
+  height: 150px;*/
+  padding-top: 1em;
+  left: 500px;
+  justify-content: space-around;
+  width: 50%;
+  height: 20%;
+  background-color: #242635;
+  position: absolute;
+  margin: -10px;
+  display:flex;
+  
+}
+
+
+.container-networks .google{
+  border-radius: 1em;
+  width: 5em;
+  height: 7em;
+  background-color: #d1ceca;
+  
+}
+
+.container-networks .amazon{
+  
+  border-radius: 1em;
+  width: 5em;
+  height: 7em;
+  background-color: #d1ceca;
+}
+
+.container-networks .spotify{
+  border-radius: 1em;
+  width: 5em;
+  height: 7em;
+  
+  background-color: #d1ceca;
+}
+
+
+.circulo{
+  padding: 20px;
+  border-radius: 100%;
+  background-color: #242635;
+  
+}
+.about{
+  text-align: center;
+  /*padding:10em;*/
+  padding-top: 10em;
+  background-color: rgb(25, 25, 41);
+}
+
+.about p{
+  padding: 1em;
+  color: #fff;
+}
+
+.about h2{
+  font-size: 2em;
+  color: #34b0be;
+}
+.divider{
+  height: 4px;
+  width: 60px;
+  background-color: #fff;
+}
+.portfolio{
+  
+  background-color: rgb(25, 25, 41);
+}
+
+.portfolio-healdings h2{
+  font-size: 1em;
+  color: #34b0be;
+  text-align: center;/*centra texto*/
+  padding: 1em;
+  font-size: 2em;
+}
+.container{
+  
+  display: grid;
+  
+  grid-template-columns: repeat(3, 1fr);/*crea grd en columnas*/
+  gap: 20px;/*realiza sepracion entre imagenes del grid*/
+  
+}
+.contact-healdings{
+  
+  font-size: 1em;
+  color: #34b0be;
+  text-align: center; /*centra texto*/
+  padding: 2em;
+  background-color: #242635;
+  font-size: 2em;
+}
+
+.contenedor{
+  
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-left: 21em;
+  padding-left: 2em;
+  
+}
+
+.centradophone{
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.contenedor1{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding-left: 2em;
+  
+  
+}
+.centradoemail{
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+.phone{
+  position: absolute;
+  top: 10%;
+  left: 48%;
+}
+.email{
+  
+  position: absolute;
+  top: 10%;
+  left: 48%;
+}
+.centrado-abajo span{
+  position: absolute;
+  left: 50%;
+  bottom: -170%;
+  transform: translate(-50%, -50%);
+  color: rgb(156, 156, 156);
+}
+
+.contact{
+  display:block;
+  background-color:  rgb(25, 25, 41);
+}
+.contact-healdings{
+  background-color:  rgb(25, 25, 41);
+}
+
+.grafico {
+  margin-bottom: 2em;
+  margin-left: 24em;
+  position: relative; /* IE is dumb */
+  width: 500px;
+  border: 1px solid #fff;
+  border-radius: 1em;
+  padding: 2px;
+  
+  }
+  .grafico .barra {
+ /* margin-left: 30em;*/
+
+  display: block;
+  position: relative;
+  background:#34b0be;
+  border-radius: 1em;
+  text-align: center;
+  color: #333;
+  height: 2em;
+  line-height: 2em;
+  }
+  .grafico .barra span {
+  position: absolute; 
+  
+  }
+.skills{
+  text-align: center;/*centra texto*/
+  padding: 2em;  
+  background: rgb(25, 25, 41);
+}
+.skillsColor span{
+ color: #34b0be;
+ font-size: 1.5em;
+}
+.marketing span{
+  margin-right: 31em;
+  color: #fff;
+
+}
+.uidesing span{
+  
+  margin-right: 31em;
+  color: #fff;
+  
+}
+.uxresearch span{
+  margin-right: 30em;
+  color: #fff;
+}
+
+
+.services{
+  background: rgb(25, 25, 41);
+}
+.services h2{
+  padding: 1em;
+  color: #34b0be;
+  text-align: center;
+  font-size: 2em;
+}
+.contenedorUxui{
+  padding-left: 5em;
+
+  position: relative;
+  display: inline-block;
+  text-align: center;
+    
+}
+.contenedorMarketing{
+  padding-left: 5em;
+  
+  position: relative;
+  display: inline-block;
+  text-align: center;
+    
+}
+.contenedorResearch{
+  padding-left: 5em;
+
+  position: relative;
+  display: inline-block;
+  text-align: center;
+    
+}
+.vector{
+  /*                         */
+  position: relative;
+  bottom: 1em;
+  color: #d1ceca;
+  background-color: #fff;
+
+}
+
+.pencil{
+  
+  position: absolute;
+  top: 1%;
+  right: 18%;
+}
+.speaker{
+  
+  position: absolute;
+  top: 1%;
+  right: 18%;
+}
+.search{
+  
+  position: absolute;
+  top: 1%;
+  right: 18%;
+}
+
+.centradouxui span{
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.centradomarketing{
+  position: absolute;
+  top: 45%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.centradoresearch{
+  position: absolute;
+  top: 45%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.centrado-abajo-marketing span{
+  position: absolute;
+  /*left: 110%;*/
+  top: 3.5em;
+  transform: translate(-50%, -50%);
+  color: rgb(156, 156, 156);
+}
+.centrado-abajo-research span{
+  position: absolute;
+  /*left: 110%;*/
+  top: 3.5em;
+  transform: translate(-50%, -50%);
+  color: rgb(156, 156, 156);
+}
+.centrado-abajo-uxui span{
+  position: absolute;
+  /*left: 67%;*/
+  bottom: 10em;
+  transform: translate(-50%, -50%);
+  color: rgb(156, 156, 156);
+  padding-top: 1em;
+}
+
+
+
+
