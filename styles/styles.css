@@ -10,6 +10,9 @@
 html {
   box-sizing: border-box;
 }
+
+
+
 body{
   font-family: 'Montserrat', sans-serif;
 }
@@ -21,12 +24,20 @@ body{
   color: #fff;
 }
 
+/*nav desktop*/
+  .navbar{
+    display: flex;/*elementos uno a lado de otro*/
+    justify-content:flex-end;/*coloca en lado derecho la lista de barra */
+    padding: 2em;
+  }
+  @media (max-width: 480px){
+    .navbar{
+      display: none;
+    }
+   
 
-.navbar{
-  display: flex;/*elementos uno a lado de otro*/
-  justify-content:flex-end;/*coloca en lado derecho la lista de barra */
-  padding: 2em;
-}
+  }
+ 
 
 /*.home{
   padding-right: 3em;
@@ -69,10 +80,11 @@ body{
   color: #34b0be;
 }
 
+
   .main{
     margin: 0 auto;
     width: 80vw;
-    height: 80vw;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);/*crea grd en columnas*/
     
@@ -81,6 +93,32 @@ body{
     
   }
 
+  @media (max-width: 480px){
+    .main{
+      margin: auto;
+      width: 40vw;
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      /*grid-template-columns: repeat(2, 1fr);/*crea grd en columnas*/
+      
+      /*lign-items: center;*/
+      
+      
+    }
+  }
+  
+
+  .divider{
+    height: 4px;
+    width: 150px;
+    background-color: #fff;
+  }
+  @media (max-width: 480px){
+    .divider{
+      display: none;
+    }
+  }
 
 .jorge span{
   color: #34b0be;
@@ -92,6 +130,16 @@ body{
   padding-top: 1em;
   color: #fff;
 }
+
+@media (max-width: 480px){
+  .marketing{
+    
+   
+    color: #fff;
+    /*border-top: 1px solid white;*/
+  }
+}
+
 .años{
   padding-bottom: 1em;
 }
@@ -147,49 +195,156 @@ h1{
   /*width: 500px;
   height: 150px;*/
   padding-top: 1em;
-  left: 500px;
+  left: 550px;
   justify-content: space-around;
-  width: 50%;
+  width: 60%;
   height: 20%;
   background-color: #242635;
   position: absolute;
-  margin: -10px;
+  margin: -50px;
   display:flex;
   
+}
+@media (max-width: 480px){
+  .container-networks{
+    /*width: 500px;
+    height: 150px;*/
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    left: 150px;
+    justify-content: space-around;
+    width: 70%;
+    height: 15%;
+    background-color: #242635;
+    position: absolute;
+    /*margin: -50px;*/
+    display:flex;
+    
+  }
 }
 
 
 .container-networks .google{
   border-radius: 1em;
-  width: 5em;
+  width: 10em;
   height: 7em;
   background-color: #d1ceca;
   
+}
+
+@media (max-width: 480px){
+  .container-networks .google{
+    border-radius: 3em;
+    width: 2em;
+    height: 4em;
+    background-color: #d1ceca;
+    
+  }
 }
 
 .container-networks .amazon{
   
   border-radius: 1em;
-  width: 5em;
+  width: 10em;
   height: 7em;
   background-color: #d1ceca;
 }
-
+@media (max-width: 480px){
+  .container-networks .amazon{
+  
+    border-radius: 1em;
+    width: 2em;
+    height: 4em;
+    background-color: #d1ceca;
+  }
+}
 .container-networks .spotify{
   border-radius: 1em;
-  width: 5em;
+  width: 10em;
   height: 7em;
   
   background-color: #d1ceca;
 }
+@media (max-width: 480px){
+  .container-networks .spotify{
+    border-radius: 1em;
+    width: 2em;
+    height: 4em;
+    
+    background-color: #d1ceca;
+  }
+}
 
-
-.circulo{
-  padding: 20px;
-  border-radius: 100%;
+.containerCirculo{
+  width: 40em;
+  height: 40em;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   background-color: #242635;
+  padding-left: 5em;
+  
   
 }
+@media (max-width: 480px){
+  .containerCirculo{
+    width: 19em;
+    height: 20em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #242635;
+    padding-left: 3em;
+    margin-top: 1em;
+    margin-right: 30em;
+    
+    
+  }
+  .circulo{
+    width: 80%;
+    height: 80%;
+
+  }
+}
+
+
+
+/*aqui desaparecemos el main mobile en la pantalla normal
+.main-mobile{
+  display: none;
+}
+/*.circulo{
+  
+  
+  
+  
+}*/
+
+
+.mobile-menu{
+  display: none;
+}
+@media (max-width: 480px){
+  .mobile-menu{
+    margin-left: 27em;
+    
+    display: block;
+    
+    width: 2em;
+    height: 2em;
+    
+
+  }
+  
+  
+}
+
+
+
+
+
+
 .about{
   text-align: center;
   /*padding:10em;*/
@@ -206,11 +361,7 @@ h1{
   font-size: 2em;
   color: #34b0be;
 }
-.divider{
-  height: 4px;
-  width: 60px;
-  background-color: #fff;
-}
+
 .portfolio{
   
   background-color: rgb(25, 25, 41);
@@ -231,6 +382,8 @@ h1{
   gap: 20px;/*realiza sepracion entre imagenes del grid*/
   
 }
+
+/*seccion contact*/
 .contact-healdings{
   
   font-size: 1em;
@@ -250,12 +403,32 @@ h1{
   padding-left: 2em;
   
 }
+@media (max-width: 480px){
+  .contenedor{
+  
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: 4em;
+    padding-left: 1em;
+    
+  }
+  
+}
 
 .centradophone{
   position: absolute;
   top: 50%;
   left: 55%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 480px){
+  .centradophone{
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .contenedor1{
@@ -266,22 +439,56 @@ h1{
   
   
 }
+@media (max-width: 480px){
+  .contenedor1{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-left: 5em;
+    padding-top: 1em;
+        
+  }
+}
 .centradoemail{
   position: absolute;
   top: 50%;
   left: 55%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 480px){
+  .centradoemail{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  } 
+}
 .phone{
   position: absolute;
   top: 10%;
   left: 48%;
+}
+@media (max-width: 480px){
+  .phone{
+    position: absolute;
+    top: 10%;
+    left: 44%;
+  }
 }
 .email{
   
   position: absolute;
   top: 10%;
   left: 48%;
+}
+
+@media (max-width: 480px){
+  .email{
+  
+    position: absolute;
+    top: 10%;
+    left: 54%;
+  }
 }
 .centrado-abajo span{
   position: absolute;
@@ -309,6 +516,18 @@ h1{
   padding: 2px;
   
   }
+  @media (max-width: 480px){
+    .grafico {
+      margin-bottom: 2em;
+      margin-left: 1em;
+      position: relative; /* IE is dumb */
+      width: 400px;
+      border: 1px solid #fff;
+      border-radius: 1em;
+      padding: 2px;
+      
+      }
+  }
   .grafico .barra {
  /* margin-left: 30em;*/
 
@@ -321,6 +540,7 @@ h1{
   height: 2em;
   line-height: 2em;
   }
+  
   .grafico .barra span {
   position: absolute; 
   
@@ -339,17 +559,37 @@ h1{
   color: #fff;
 
 }
+@media (max-width: 480px){
+  .marketing span{
+    margin-right: 17em;
+    color: #fff;
+  
+  }
+}
 .uidesing span{
   
   margin-right: 31em;
   color: #fff;
   
 }
+@media (max-width: 480px){
+  .uidesing span{
+  
+    margin-right: 17em;
+    color: #fff;
+    
+  }
+}
 .uxresearch span{
   margin-right: 30em;
   color: #fff;
 }
-
+@media (max-width: 480px){
+  .uxresearch span{
+    margin-right: 16em;
+    color: #fff;
+  }
+}
 
 .services{
   background: rgb(25, 25, 41);
@@ -368,6 +608,16 @@ h1{
   text-align: center;
     
 }
+@media (max-width: 480px){
+  .contenedorUxui{
+    padding-left: 3em;
+    padding-bottom: 1em;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+      
+  }
+}
 .contenedorMarketing{
   padding-left: 5em;
   
@@ -375,6 +625,16 @@ h1{
   display: inline-block;
   text-align: center;
     
+}
+@media (max-width: 480px){
+  .contenedorMarketing{
+    padding-left: 3em;
+    padding-bottom: 1em;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+      
+  }
 }
 .contenedorResearch{
   padding-left: 5em;
@@ -384,6 +644,18 @@ h1{
   text-align: center;
     
 }
+
+@media (max-width: 480px){
+  .contenedorResearch{
+    padding-left: 3em;
+    
+    position: relative;
+    display: inline-block;
+    text-align: center;
+      
+  }
+}
+
 .vector{
   /*                         */
   position: relative;
@@ -392,6 +664,8 @@ h1{
   background-color: #fff;
 
 }
+
+
 
 .pencil{
   
